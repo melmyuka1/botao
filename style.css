@@ -1,0 +1,79 @@
+/* style.css */
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.paragrafo {
+    font-size: 10vh;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    min-width: 150px; /* Defina uma largura mínima para os botões */
+    text-align: center;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#humanas {
+    background-color: #6a00ff;
+    color: white;
+    animation: glowHumanas 2s infinite alternate;
+}
+
+#humanas button {
+    font-size: 20px;
+}
+
+@keyframes glowHumanas {
+    0% {
+        background-color: #6a00ff;
+        box-shadow: 0 0 10px #6a00ff;
+    }
+    100% {
+        background-color: #a100ff;
+        box-shadow: 0 0 20px #a100ff;
+    }
+}
+
+a button {
+    background-color: #006eff;
+    color: white;
+    animation: glowExatas 2s infinite alternate;
+}
+
+a button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes glowExatas {
+    0% {
+        background-color: #006eff;
+        box-shadow: 0 0 10px #006eff;
+    }
+    100% {
+        background-color: #009cff;
+        box-shadow: 0 0 20px #009cff;
+    }
+}
